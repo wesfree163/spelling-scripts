@@ -1,35 +1,22 @@
-# MOST OF THIS CODE WILL BE UNFINISHED JUST TO GET THE BALL ROLLING
 
-# def getInput():
-#     inputS = str(input("Enter some text to encrypt: \n"))
-#     arrayString = list(inputS)
-#     return arrayString
-#     #return inputS
-# def setOrd():
-#     indexC = char
-#     i = alphaBt.find(indexC)
-#     i += 3
-#     if i > 25:
-#         i -= 25
-#     newText += alphaBt[i] # a new text will be generated
-# flag = True
-while True:
-    x = int(input("Enter an ordinal number to check: (positive whole number) \nEnter '-1' to exit\n"))
-    if(x == -1):
-        exit(0)
-    print(chr(x))
+# function that takes names and separates them where the comma&space is at
+def func():
+    print("what we watchin?")
+    lineup = str(input('> example: Atlanta, Fargo, Bleach, Blade, ...\n\n$>'))
+    list_shows = lineup.split(', ')
+    # print(list_shows)
+    return list_shows
+    
+for val in func():
+    print(f"{val} length is {len(val)}")
+    
+# some thowaway time code
+print("Time modules\n\n")
+sec = 6000
+print(f"time in seconds, {sec}")
 
-    # string = str(input("Enter a line of text:\n"))
-    # print(string[::-1])
-    # print(ord('-'))
+td = timedelta(seconds=sec)
+print(f'\ntime in hh:mm:ss, {td}')
 
-
-
-# def countdown(n):
-#     if n <= 0:
-#         print('Blast Away!')
-#         exit(0)
-#     else:
-#         print(n)
-#         countdown(n-1)
-# print(countdown(6))
+# use the below code if you want it in a string
+print(f'\nstringified time: {str(timedelta(seconds=sec))} >> original type: {type(timedelta(seconds=sec))}')
